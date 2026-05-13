@@ -273,3 +273,51 @@ button:hover {
     }
 
 }
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+        background-attachment: scroll;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 18px 14px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .foods {
+        gap: 8px;
+    }
+
+    .foods label {
+        font-size: 13px;
+        padding: 9px 11px;
+    }
+
+    #mealList {
+        grid-template-columns: 1fr;
+    }
+
+    #shoppingList {
+        columns: 1;
+    }
+}
