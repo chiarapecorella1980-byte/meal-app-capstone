@@ -240,3 +240,36 @@ button:hover {
         width: 100%;
     }
 }
+@media screen and (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .food-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .day-card {
+        width: 100%;
+    }
+
+}
