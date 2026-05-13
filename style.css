@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(245, 241, 235, 0.85), rgba(232, 223, 210, 0.9)),
+        url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1600&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #2f2f2f;
+    padding: 32px 18px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: rgba(255, 252, 247, 0.94);
+    border-radius: 28px;
+    padding: 36px;
+    box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 16px 38px rgba(0,0,0,0.16);
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #9b6f43;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    margin: 8px 0 12px;
+    color: #2f3e34;
+}
+
+.hero-description {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #3e3428;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+}
+
+h2 {
+    font-family: Georgia, serif;
+    color: #2f3e34;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.foods label {
+    background: #f5efe6;
+    border: 1px solid #dfd1bd;
+    padding: 12px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 15px;
+}
+
+.foods label:hover {
+    background: #eadcc9;
+    transform: translateY(-2px);
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+#peopleNumber {
+    width: 140px;
+    padding: 13px 14px;
+    border-radius: 14px;
+    border: 1px solid #d4c4af;
+    font-size: 16px;
+    background: #fffaf4;
+}
+
+button {
+    padding: 14px 26px;
+    border: none;
+    border-radius: 999px;
+    background: #2f3e34;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 10px 22px rgba(47,62,52,0.22);
+}
+
+button:hover {
+    background: #1f2a23;
+    transform: translateY(-2px);
+}
+
+#mealList {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.day-card {
+    background: #fff8ef;
+    border: 1px solid #e2d2bd;
+    border-left: 7px solid #9b6f43;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.day-card h3 {
+    margin: 0 0 12px;
+    color: #2f3e34;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.day-card p {
+    margin: 7px 0;
+    line-height: 1.5;
+}
+
+#shoppingList {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+    columns: 2;
+    column-gap: 22px;
+}
+
+#shoppingList li {
+    break-inside: avoid;
+    background: #f5efe6;
+    border: 1px solid #dfd1bd;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 18px 10px;
+        background-attachment: scroll;
+    }
+
+    .container {
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    .hero-image {
+        height: 230px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #peopleNumber,
+    button {
+        width: 100%;
+    }
+
+    #mealList {
+        grid-template-columns: 1fr;
+    }
+
+    #shoppingList {
+        columns: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .foods label {
+        width: 100%;
+    }
+}

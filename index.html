@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Meal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <div class="hero">
+
+    <div class="hero-text">
+
+        <p class="eyebrow">Meal planner intelligente</p>
+
+        <h1>Meal App</h1>
+
+        <p class="hero-description">
+            La tua settimana inizia da ciò che ami mangiare.
+            Organizza pasti, quantità e lista della spesa
+            in modo semplice, caldo e naturale.
+        </p>
+
+    </div>
+
+    <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop"
+        alt="cucina"
+    >
+
+</div>
+    <h2>🥕 Cosa ti piace mangiare?</h2>
+    
+
+    <div class="foods">
+      <label><input type="checkbox" value="pasta"> Pasta</label>
+      <label><input type="checkbox" value="riso"> Riso</label>
+      <label><input type="checkbox" value="uova"> Uova</label>
+      <label><input type="checkbox" value="zucchine"> Zucchine</label>
+      <label><input type="checkbox" value="pomodoro"> Pomodoro</label>
+      <label><input type="checkbox" value="ceci"> Ceci</label>
+      <label><input type="checkbox" value="tonno"> Tonno</label>
+      <label><input type="checkbox" value="patate"> Patate</label>
+      <label><input type="checkbox" value="spinaci"> Spinaci</label>
+      <label><input type="checkbox" value="piselli"> Piselli</label>
+      <label><input type="checkbox" value="carote"> Carote</label>
+      <label><input type="checkbox" value="lenticchie"> Lenticchie</label>
+      <label><input type="checkbox" value="salmone"> Salmone</label>
+      <label><input type="checkbox" value="mozzarella"> Mozzarella</label>
+      <label><input type="checkbox" value="cous cous"> Cous cous</label>
+      <label><input type="checkbox" value="farro"> Farro</label>
+      <label><input type="checkbox" value="grano saraceno"> Grano saraceno</label>
+      <label><input type="checkbox" value="grano"> Grano</label>
+      <label><input type="checkbox" value="bulgur"> Bulgur</label>
+    </div>
+    <h2>🍽️ Per quante persone cucini?</h2>
+
+<div class="controls">
+<input 
+    type="number" 
+    id="peopleNumber" 
+    value="1" 
+    min="1"
+    >
+
+    <button onclick="generateMeals()">Genera menù settimanale</button>
+    </div>
+
+    <h2>🌿 Il tuo menù della settimana</h2>
+    <ul id="mealList"></ul>
+    <h2>🧺  Cosa comprare questa settimana</h2>
+    <ul id="shoppingList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
